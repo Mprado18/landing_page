@@ -1,0 +1,294 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+}
+
+.clear{
+    clear: both;
+}
+
+.center{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 2%;
+    max-width: 1280px;
+}
+
+.header{
+    width: 100%;
+    padding: 0 2%;
+    height: 60px;
+    background-color: rgb(47, 143, 179);
+}
+
+.header img{
+    margin-top: -10px;
+    margin-left: -14px;
+    width: 120px;
+    height: 85px;
+}
+
+.container-banner{
+    width: 100%;
+    padding: 0 2%;
+    height: 557px;
+    background-image: url('../imagem/banner.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.container-banner > .center{
+    height: 100%;
+}
+
+.form{
+    width: 400px;
+    height: calc(100% + 30px);
+    background-color: rgba(0, 0, 0, 0.8);
+    float: right;
+    position: relative;
+    top: -15px;
+    padding: 10px;
+    background-clip: padding-box;
+    border-width: 8px;
+    border-style: solid;
+    border-color: rgba(250, 250, 250, 0.6);
+}
+
+.form h2{
+    font-size: 20px;
+    font-weight: normal;
+    color: white;
+    font-family: "Cabin";
+}
+
+.input-container{
+    margin-top: 20px;
+}
+
+.input-container span,.form p{
+    display: inline-block;
+    width: 100%;
+    color: white;
+    font-size: 17px;
+    font-family: Helvetica;
+}
+
+.form p{
+    margin: 20px 0;
+}
+
+.input-container input[type="text"]{
+    width: 344px;
+    height: 55px;
+    border: 1px solid white;
+    margin-top: 8px;
+    background-color: white;
+}
+
+.form .input-submit{
+    text-align: center;
+}
+
+.form input[type="submit"]{
+    width: 280px;
+    height: 56px;
+    font-size: 25px;
+    color: white;
+    display: inline-block;
+    background-color: rgba(48, 240, 10, 0.473);
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+    cursor: pointer;
+    font-family: "Cabin";
+}
+
+.form input[type="submit"]:hover{
+    background-color: rgba(48, 240, 10, 0.6);
+}
+
+.container-list{
+    padding: 20px;
+    float: left;
+    width: 619px;
+    height: 270px;
+    background-color: rgba(47, 143, 179,0.8);
+    margin-top: 100px;
+    margin-left: 40px;
+}
+
+.container-list ul{
+    list-style-position: inside;
+}
+
+.container-list ul li{
+    color: white;
+    font-weight: bold;
+    margin-top: 18px;
+    font-family: "Cabin";
+    font-size: 16px;
+}
+
+.container-banner2{
+    padding: 40px 2%;
+    font-family: "Helvetica";
+    background-color: rgba(47, 143, 179, 0.5);
+    text-align: center;
+    color: black;
+}
+
+.container-banner2 h2{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.container-banner2 p{
+    width: 100%;
+    display: inline-block;
+    text-align: justify;
+    max-width: 768px;
+}
+
+.arrow{
+    background-image: url('../imagem/arrow2.png');
+    width: 80px;
+    height: 80px;
+    background-size: 100% 100%;
+    position: relative;
+    top: 80px;
+    left: 50%;
+    margin-left: -50px;
+}
+
+.section-1{
+    padding: 40px 2%;
+    font-family: "Helvetica";
+}
+
+.section-1 h2{
+    text-align: center;
+    color: black;
+    font-size: 20px;
+}
+
+.section-1 p{
+    color: black;
+    font-size: 14px;
+    text-align: justify;
+}
+
+.container-section p{
+    padding: 10px 15px;
+}
+
+.container-section{
+    margin-top: 40px;
+    text-align: center;
+}
+
+.container-single{
+    float: left;
+    width: 33.333%;
+    padding: 30px;
+}
+
+.container-single img{
+    width: 65px;
+}
+
+.footer{
+    padding: 30px 0;
+    border-top: 1.5px dotted black;
+    clear: both; /*limpando float anterior*/
+    text-align: center;
+    font-family: "Helvetica";
+    color: black;
+    font-weight: bolder;
+    background-color: rgba(37, 107, 133, 0.1);
+}
+
+@media screen and (max-width: 1024px){
+    .header{
+        width: 100%;
+        height: auto;
+        padding: 15px 0;
+        text-align: center;
+}
+
+    .header img{
+        margin: 0;
+    }
+
+    .container-list{
+        padding: 20px;
+        float: left;
+        width: 40%;
+        height: auto;
+        max-width: 500px;
+        margin-top: 0;
+        margin-left: -0px;
+    }
+
+    .container-banner{
+        width: 100%;
+        padding: 40px 2%;
+        height: auto;
+        text-align: center;
+    }
+
+    .form{
+        max-width: 400px;
+        width: 60%;
+        height: 100%;
+        float: right;
+        position: relative;
+        top: 0px;
+        padding: 10px;
+        margin-top: 30px;
+    }
+
+    .input-container input[type="text"]{
+        width: 100%;
+        height: 55px;
+    }
+    
+    .form input[type="submit"]{
+        height: 56px;
+        width: 100% ;
+    }
+}
+
+    @media screen and (max-width: 425px){
+        .container-banner2{
+            padding-left: 4%;
+            padding-right: 4%;
+        }
+
+        .container-list{
+            margin-top: 0;
+            float: none;
+            display: inline-block;
+            width: 100%;
+        }
+
+        .form {
+            float: none;
+            display: inline-block;
+            width: 90%;
+        }
+
+        .container-single{
+            float: none;
+            display: inline-block;
+            width: 100%;
+            padding: 15px;
+            max-width: 600px;
+        }
+    }
